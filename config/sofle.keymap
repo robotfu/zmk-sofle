@@ -19,6 +19,7 @@
 &lt {
     flavor = "tap-unless-interrupted";
     quick-tap-ms = <150>;
+    tapping-term-ms = <250>;
 };
 
 / {
