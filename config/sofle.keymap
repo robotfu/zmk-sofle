@@ -28,6 +28,7 @@
     require-prior-idle-ms = <200>;
     retro-tap;
     tapping-term-ms = <200>;
+    flavor = "tap-preferred";
 };
 
 / {
