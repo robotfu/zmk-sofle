@@ -17,11 +17,17 @@
 #define ZMK_MOUSE_DEFAULT_SCRL_VAL 20    // 10
 
 &lt {
-    flavor = "hold-preferred";
-    tapping-term-ms = <250>;
-    require-prior-idle-ms = <250>;
+    flavor = "tap-unless-interrupted";
+    require-prior-idle-ms = <200>;
     retro-tap;
-    quick-tap-ms = <250>;
+    quick-tap-ms = <200>;
+};
+
+&mt {
+    flavor = "tap-unless-interrupted";
+    quick-tap-ms = <200>;
+    require-prior-idle-ms = <200>;
+    retro-tap;
 };
 
 / {
