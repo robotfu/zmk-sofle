@@ -59,7 +59,7 @@ layers:
   - {t: '$$mdi:keyboard-esc$$', h: fun}
   - {t: '$$mdi:keyboard-space$$', h: layer1}
   - {t: '$$mdi:keyboard-tab$$', h: media}
-  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - {t: game, h: toggle}
   - {t: '$$mdi:keyboard-return$$', h: sym}
   - {t: '$$mdi:backspace$$', h: num}
   - {t: '$$mdi:backspace-reverse-outline$$', h: layer6}
@@ -231,9 +231,9 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - PREVIOUS
-  - VOLUME DOWN
-  - VOLUME UP
-  - NEXT
+  - $$mdi:volume-low$$
+  - $$mdi:volume-high$$
+  - $$mdi:skip-next$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
