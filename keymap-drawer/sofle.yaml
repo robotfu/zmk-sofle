@@ -13,7 +13,7 @@ layers:
   - {t: Alt+ 8, s: Alt+ *}
   - {t: Alt+ 9, s: Alt+ (}
   - {t: Alt+ 0, s: Alt+ )}
-  - {t: '$$mdi:backspace$$', type: backspace}
+  - PRINTSCREEN
   - {t: '`', s: '~'}
   - Q
   - W
@@ -81,7 +81,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - $$mdi:mouse-left-click-outline$$
+  - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:mouse-scroll-wheel$$
   - $$mdi:mouse-right-click-outline$$
   - '&mkp MB4'
