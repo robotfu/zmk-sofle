@@ -16,6 +16,11 @@
 #define ZMK_MOUSE_DEFAULT_MOVE_VAL 1200  //  600
 #define ZMK_MOUSE_DEFAULT_SCRL_VAL 20    // 10
 
+&lt {
+    flavor = "tap-unless-interrupted";
+    quick-tap-ms = <150>;
+};
+
 / {
     behaviors {
         mmv {
@@ -44,7 +49,7 @@
 
         base {
             bindings = <
-&kp ESC     &kp LA(N1)  &kp LA(N2)  &kp LA(N3)   &kp LA(N4)   &kp LA(N5)    &kp PG_UP  &kp LA(N6)   &kp LA(N7)       &kp LA(N8)    &kp LA(N9)  &kp LA(N0)         &kp BACKSPACE
+&kp ESC     &kp LA(N1)  &kp LA(N2)  &kp LA(N3)   &kp LA(N4)   &kp LA(N5)    &kp PG_UP  &kp LA(N6)   &kp LA(N7)       &kp LA(N8)    &kp LA(N9)  &kp LA(N0)         &kp PRINTSCREEN
 &kp GRAVE   &kp Q       &kp W       &kp E        &kp R        &kp T         &kp PG_DN  &kp Y        &kp U            &kp I         &kp O       &kp P              &kp BSLH
 &kp COLON   &mt LWIN A  &mt LALT S  &mt LCTRL D  &mt LSHFT F  &kp G         &kp HOME   &kp H        &mt RSHFT J      &mt RCTRL K   &mt RALT L  &mt RIGHT_WIN SQT  &kp SEMICOLON
 &kp LSHFT   &kp Z       &kp X       &kp C        &kp V        &kp B         &kp END    &kp N        &kp M            &kp COMMA     &kp DOT     &kp FSLH           &kp ENTER
@@ -58,7 +63,7 @@
         nav {
             bindings = <
 &kp GRAVE  &kp F1           &kp F2          &kp F3           &kp F4           &kp F5             &mmv MOVE_UP     &kp F6           &kp F7           &kp F8      &kp F9    &kp F10    &trans
-&trans     &trans           &mkp LCLK       &mkp MCLK        &mkp RCLK        &mkp MB4           &mmv MOVE_DOWN   &kp PG_UP        &kp END          &kp UP      &kp HOME  &kp MINUS  &kp EQUAL
+&trans     &trans           &trans          &mkp MCLK        &mkp RCLK        &mkp MB4           &mmv MOVE_DOWN   &kp PG_UP        &kp END          &kp UP      &kp HOME  &kp MINUS  &kp EQUAL
 &trans     &kp LGUI         &kp LALT        &kp LCTRL        &kp LSHFT        &mkp MB5           &mmv MOVE_LEFT   &kp PG_DN        &kp LEFT         &kp DOWN    &kp UP    &kp RIGHT  &kp RIGHT_BRACKET
 &trans     &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &rgb_ug RGB_SPI    &mmv MOVE_RIGHT  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp INSERT  &kp F11   &kp F12    &trans
 &to 0      &trans           &trans          &trans           &trans           &trans             &mkp LCLK        &kp ENTER        &trans           &trans      &trans    &trans
@@ -77,7 +82,7 @@
 &to 0      &trans        &trans        &kp DOT       &kp N0        &kp MINUS       &mkp LCLK        &trans           &trans          &trans      &trans     &trans
             >;
 
-            sensor-bindings = <&scroll_encoder>;
+            sensor-bindings = <&inc_dec_kp UP DOWN>;
         };
 
         media {
