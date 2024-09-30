@@ -16,11 +16,7 @@
 #define ZMK_MOUSE_DEFAULT_MOVE_VAL 1200  //  600
 #define ZMK_MOUSE_DEFAULT_SCRL_VAL 20    // 10
 
-&lt {
-    flavor = "hold-preferred";
-    require-prior-idle-ms = <200>;
-    quick-tap-ms = <200>;
-};
+&lt { flavor = "hold-preferred"; };
 
 &mt {
     quick-tap-ms = <200>;
