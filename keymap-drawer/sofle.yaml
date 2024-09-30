@@ -561,7 +561,7 @@ layers:
   - {t: ;, s: ':'}
   - .
   - $$mdi:apple-keyboard-control$$
-  - $$mdi:apple-keyboard-shift$$
+  - Z
   - X
   - C
   - V
