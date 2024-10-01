@@ -172,12 +172,12 @@
 
         feat_left {
             if-layers = <1 2>;
-            then-layer = <7>;
+            then-layer = <6>;
         };
 
         feat_right {
             if-layers = <3 5 4>;
-            then-layer = <8>;
+            then-layer = <7>;
         };
     };
 };
