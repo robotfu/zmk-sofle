@@ -119,11 +119,11 @@
 
         feat {
             bindings = <
-                &none       &none        &none       &none           &none         &none    &bt BT_SEL 3  &none            &none            &none            &none            &none            &none
-                &none       &none        &none       &bt BT_CLR_ALL  &bt BT_CLR    &none    &bt BT_SEL 2  &none            &rgb_ug RGB_OFF  &rgb_ug RGB_SPD  &rgb_ug RGB_SPI  &rgb_ug RGB_ON   &none
-                &sys_reset  &bootloader  &soft_off   &out OUT_USB    &out OUT_BLE  &none    &bt BT_SEL 1  &none            &rgb_ug RGB_EFR  &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &rgb_ug RGB_EFF  &none
-                &none       &bl BL_ON    &bl BL_DEC  &bl BL_INC      &bl BL_OFF    &none    &bt BT_SEL 4  &rgb_ug RGB_BRI  &rgb_ug RGB_HUD  &rgb_ug RGB_SAD  &rgb_ug RGB_SAI  &rgb_ug RGB_HUI  &none
-                &to 0       &none        &none       &none           &none         &none    &bt BT_SEL 0  &bl BL_CYCLE     &rgb_ug RGB_TOG  &bl BL_TOG       &none            &none
+        &none       &none        &none       &none           &none         &none    &bt BT_SEL 3  &none         &none           &none       &none        &none       &none
+        &none       &none        &none       &bt BT_CLR_ALL  &bt BT_CLR    &none    &bt BT_SEL 2  &none &bt BT_CLR    &bt BT_CLR_ALL &none       &none        &none
+        &sys_reset  &bootloader  &soft_off   &out OUT_USB    &out OUT_BLE  &none    &bt BT_SEL 1  &none &out OUT_BLE  &out OUT_USB    &soft_off   &bootloader  &sys_reset
+        &none       &bl BL_ON    &bl BL_DEC  &bl BL_INC      &bl BL_OFF    &none    &bt BT_SEL 4  &none &bl BL_OFF    &bl BL_INC      &bl BL_DEC  &bl BL_ON    &none
+        &to 0       &none        &none       &none           &none         &none    &bt BT_SEL 0  &none         &none           &none       &none        &to 0
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -142,17 +142,17 @@
             label = "fun";
         };
 
-        na {
+        light {
             bindings = <
-                &none &none &none &none &none &none &none &none &none &none &none &none
-                &none &none &none &none &none &none &none &none &none &none &none &none
-                &none &none &none &none &none &none &none &none &none &none &none &none
-                &none &none &none &none &none &none &none &none &none &none &none &none
-                &none &none &none &none &none &none &none &none &none &none &none &none
+        &none            &none            &none            &none            &none            &none    &bt BT_SEL 3  &none            &none            &none            &none            &none            &none
+        &rgb_ug RGB_ON   &rgb_ug RGB_SPI  &rgb_ug RGB_SPD  &rgb_ug RGB_OFF  &none            &none    &bt BT_SEL 2  &none            &rgb_ug RGB_OFF  &rgb_ug RGB_SPD  &rgb_ug RGB_SPI  &rgb_ug RGB_ON   &none
+        &none &rgb_ug RGB_EFF  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &rgb_ug RGB_EFR  &none                &bt BT_SEL 1  &none            &rgb_ug RGB_EFR  &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &rgb_ug RGB_EFF  &none
+        &none &rgb_ug RGB_HUI  &rgb_ug RGB_SAI  &rgb_ug RGB_SAD  &rgb_ug RGB_HUD  &rgb_ug RGB_BRI      &bt BT_SEL 4  &rgb_ug RGB_BRI  &rgb_ug RGB_HUD  &rgb_ug RGB_SAD  &rgb_ug RGB_SAI  &rgb_ug RGB_HUI  &none
+        &none            &none  &none          &bl BL_TOG       &rgb_ug RGB_TOG  &bl BL_CYCLE         &bt BT_SEL 0  &bl BL_CYCLE     &rgb_ug RGB_TOG  &bl BL_TOG       &none            &none
             >;
 
             sensor-bindings = <&scroll_encoder>;
-            label = "na";
+            label = "light";
         };
 
         game {
