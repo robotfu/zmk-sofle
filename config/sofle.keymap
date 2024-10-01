@@ -67,7 +67,7 @@
             label = "base";
         };
 
-        feat_left {
+        featL {
             bindings = <
 &none  &none        &none   &none       &none      &none                &none      &none  &none  &none  &none  &none  &none
 &none  &bootloader  &none   &sys_reset  &soft_off  &rgb_ug RGB_TOG      &none      &none  &none  &none  &none  &none  &none
@@ -105,7 +105,7 @@
             label = "media";
         };
 
-        feat_right {
+        featR {
             label = "feat right";
             bindings = <
 &none  &none  &none  &none  &none  &none    &none  &none              &none      &none       &none   &none        &none
