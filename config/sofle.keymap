@@ -77,15 +77,16 @@
             >;
 
             sensor-bindings = <&scroll_encoder>;
+            label = "nav";
         };
 
         num {
             bindings = <
-&kp TILDE  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &mmv MOVE_UP     &kp F6           &kp F7          &kp F8      &kp F9     &kp F10      &trans
-&trans     &kp LBKT      &kp N7        &kp N8        &kp N9        &kp RBKT        &mmv MOVE_DOWN   &trans           &trans          &kp F11     &kp F12    &kp UNDER    &kp PLUS
-&trans     &kp SEMI      &kp N4        &kp N5        &kp N6        &kp EQUAL       &mmv MOVE_LEFT   &trans           &kp RSHFT       &kp RCTRL   &kp RALT   &kp RGUI     &kp RBRC
-&trans     &kp GRAVE     &kp N1        &kp N2        &kp N3        &kp BSLH        &mmv MOVE_RIGHT  &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &sys_reset  &soft_off  &bootloader  &trans
-&to 0      &trans        &trans        &kp DOT       &kp N0        &kp MINUS       &mkp LCLK        &trans           &trans          &trans      &trans     &trans
+&trans  &trans     &trans  &trans   &trans  &trans       &mmv MOVE_UP     &trans  &trans     &trans       &trans     &trans    &trans
+&trans  &kp LBKT   &kp N7  &kp N8   &kp N9  &kp RBKT     &mmv MOVE_DOWN   &trans  &trans     &trans       &trans     &trans    &trans
+&trans  &kp SEMI   &kp N4  &kp N5   &kp N6  &kp EQUAL    &mmv MOVE_LEFT   &trans  &kp RSHFT  &kp RCTRL    &kp RALT   &kp RGUI  &kp RBRC
+&trans  &kp GRAVE  &kp N1  &kp N2   &kp N3  &kp BSLH     &mmv MOVE_RIGHT  &trans  &kp HOME   &kp PAGE_UP  &kp PG_DN  &kp END   &trans
+&to 0   &trans     &trans  &kp DOT  &kp N0  &kp MINUS    &mkp LCLK        &trans  &trans     &trans       &trans     &trans
             >;
 
             sensor-bindings = <&inc_dec_kp UP DOWN>;
@@ -94,10 +95,10 @@
 
         media {
             bindings = <
-&trans  &trans    &trans    &trans     &trans     &trans    &trans  &trans      &trans            &trans        &trans        &trans      &trans
-&trans  &trans    &trans    &trans     &trans     &trans    &trans  &trans      &trans            &trans        &trans        &trans      &trans
-&trans  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &trans    &trans  &trans      &kp C_PREVIOUS    &kp C_VOL_DN  &kp C_VOL_UP  &kp C_NEXT  &trans
-&trans  &trans    &trans    &trans     &trans     &trans    &trans  &trans      &trans            &trans        &trans        &trans      &trans
+&trans  &trans    &trans    &trans     &trans     &trans    &trans  &trans      &trans            &trans        &trans        &trans            &trans
+&trans  &trans    &trans    &trans     &trans     &trans    &trans  &trans      &trans            &trans        &trans        &trans            &trans
+&trans  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &trans    &trans  &trans      &kp C_PREVIOUS    &kp C_VOL_DN  &kp C_VOL_UP  &kp C_NEXT        &trans
+&trans  &trans    &trans    &trans     &trans     &trans    &trans  &trans      &kp C_REWIND      &trans        &trans        &kp C_AC_FORWARD  &trans
 &to 0   &trans    &trans    &trans     &trans     &trans    &trans  &kp K_MUTE  &kp C_PLAY_PAUSE  &kp C_STOP    &trans        &trans
             >;
 
@@ -118,14 +119,15 @@
 
         feat {
             bindings = <
-&sys_reset  &none        &none       &none         &none         &none              &bt BT_SEL 3  &none            &none            &none            &none            &none            &none
+&none       &none        &none       &none         &none         &none              &bt BT_SEL 3  &none            &none            &none            &none            &none            &none
 &none       &none        &none       &none         &none         &none              &bt BT_SEL 2  &none            &rgb_ug RGB_OFF  &rgb_ug RGB_SPD  &rgb_ug RGB_SPI  &rgb_ug RGB_ON   &none
-&sys_reset  &bootloader  &soft_off   &out OUT_USB  &out OUT_BLE  &none              &bt BT_SEL 1  &none            &rgb_ug RGB_EFR  &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &rgb_ug RGB_EFF  &none
+&sys_reset  &bootloader  &soft_off   &out OUT_USB  &out OUT_BLE  &bt BT_CLR_ALL     &bt BT_SEL 1  &none            &rgb_ug RGB_EFR  &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &rgb_ug RGB_EFF  &none
 &none       &bl BL_ON    &bl BL_DEC  &bl BL_INC    &bl BL_OFF    &rgb_ug RGB_SPI    &bt BT_SEL 4  &rgb_ug RGB_BRI  &rgb_ug RGB_HUD  &rgb_ug RGB_SAD  &rgb_ug RGB_SAI  &rgb_ug RGB_HUI  &none
-&to 0       &none        &none       &bt BT_CLR    &bl BL_TOG    &bt BT_CLR_ALL     &bt BT_SEL 0  &bl BL_CYCLE     &rgb_ug RGB_TOG  &bl BL_TOG       &none            &none
+&to 0       &none        &none       &bt BT_CLR    &bl BL_TOG    &none              &bt BT_SEL 0  &bl BL_CYCLE     &rgb_ug RGB_TOG  &bl BL_TOG       &none            &none
             >;
 
             sensor-bindings = <&scroll_encoder>;
+            label = "feat";
         };
 
         fun {
