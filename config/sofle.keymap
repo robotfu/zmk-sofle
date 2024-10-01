@@ -69,11 +69,11 @@
 
         nav {
             bindings = <
-&kp GRAVE  &kp F1           &kp F2          &kp F3           &kp F4           &kp F5             &mmv MOVE_UP     &kp F6           &kp F7           &kp F8      &kp F9    &kp F10    &trans
-&trans     &trans           &trans          &mkp MCLK        &mkp RCLK        &mkp MB4           &mmv MOVE_DOWN   &kp PG_UP        &kp END          &kp UP      &kp HOME  &kp MINUS  &kp EQUAL
-&trans     &kp LGUI         &kp LALT        &kp LCTRL        &kp LSHFT        &mkp MB5           &mmv MOVE_LEFT   &kp PG_DN        &kp LEFT         &kp DOWN    &kp UP    &kp RIGHT  &kp RIGHT_BRACKET
-&trans     &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &rgb_ug RGB_SPI    &mmv MOVE_RIGHT  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp INSERT  &kp F11   &kp F12    &trans
-&to 0      &trans           &trans          &trans           &trans           &trans             &to 5            &trans           &trans           &trans      &trans    &trans
+&trans  &trans    &trans    &trans     &trans     &trans    &trans  &trans  &trans    &trans     &trans     &trans     &trans
+&trans  &trans    &trans    &trans     &trans     &trans    &trans  &trans  &trans    &trans     &trans     &trans     &trans
+&trans  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &trans    &trans  &trans  &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &trans
+&trans  &trans    &trans    &trans     &trans     &trans    &trans  &trans  &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &trans
+&to 0   &trans    &trans    &trans     &trans     &trans    &trans  &trans  &trans    &trans     &trans     &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -82,11 +82,11 @@
 
         num {
             bindings = <
-&trans  &trans     &trans  &trans   &trans  &trans       &mmv MOVE_UP     &trans  &trans     &trans       &trans     &trans    &trans
-&trans  &kp LBKT   &kp N7  &kp N8   &kp N9  &kp RBKT     &mmv MOVE_DOWN   &trans  &trans     &trans       &trans     &trans    &trans
-&trans  &kp SEMI   &kp N4  &kp N5   &kp N6  &kp EQUAL    &mmv MOVE_LEFT   &trans  &kp RSHFT  &kp RCTRL    &kp RALT   &kp RGUI  &kp RBRC
-&trans  &kp GRAVE  &kp N1  &kp N2   &kp N3  &kp BSLH     &mmv MOVE_RIGHT  &trans  &kp HOME   &kp PAGE_UP  &kp PG_DN  &kp END   &trans
-&to 0   &trans     &trans  &kp DOT  &kp N0  &kp MINUS    &mkp LCLK        &trans  &trans     &trans       &trans     &trans
+&trans  &trans     &trans  &trans   &trans  &trans       &trans  &trans  &trans     &trans     &trans    &trans    &trans
+&trans  &kp LBKT   &kp N7  &kp N8   &kp N9  &kp RBKT     &trans  &trans  &trans     &trans     &trans    &trans    &trans
+&trans  &kp SEMI   &kp N4  &kp N5   &kp N6  &kp EQUAL    &trans  &trans  &kp RSHFT  &kp RCTRL  &kp RALT  &kp RGUI  &trans
+&trans  &kp GRAVE  &kp N1  &kp N2   &kp N3  &kp BSLH     &trans  &trans  &trans     &trans     &trans    &trans    &trans
+&to 0   &trans     &trans  &kp DOT  &kp N0  &kp MINUS    &trans  &trans  &trans     &trans     &trans    &trans
             >;
 
             sensor-bindings = <&inc_dec_kp UP DOWN>;
@@ -119,11 +119,11 @@
 
         feat {
             bindings = <
-&none       &none        &none       &none         &none         &none              &bt BT_SEL 3  &none            &none            &none            &none            &none            &none
-&none       &none        &none       &none         &none         &none              &bt BT_SEL 2  &none            &rgb_ug RGB_OFF  &rgb_ug RGB_SPD  &rgb_ug RGB_SPI  &rgb_ug RGB_ON   &none
-&sys_reset  &bootloader  &soft_off   &out OUT_USB  &out OUT_BLE  &bt BT_CLR_ALL     &bt BT_SEL 1  &none            &rgb_ug RGB_EFR  &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &rgb_ug RGB_EFF  &none
-&none       &bl BL_ON    &bl BL_DEC  &bl BL_INC    &bl BL_OFF    &rgb_ug RGB_SPI    &bt BT_SEL 4  &rgb_ug RGB_BRI  &rgb_ug RGB_HUD  &rgb_ug RGB_SAD  &rgb_ug RGB_SAI  &rgb_ug RGB_HUI  &none
-&to 0       &none        &none       &bt BT_CLR    &bl BL_TOG    &none              &bt BT_SEL 0  &bl BL_CYCLE     &rgb_ug RGB_TOG  &bl BL_TOG       &none            &none
+&none       &none        &none       &none           &none         &none    &bt BT_SEL 3  &none            &none            &none            &none            &none            &none
+&none       &none        &none       &bt BT_CLR_ALL  &bt BT_CLR    &none    &bt BT_SEL 2  &none            &rgb_ug RGB_OFF  &rgb_ug RGB_SPD  &rgb_ug RGB_SPI  &rgb_ug RGB_ON   &none
+&sys_reset  &bootloader  &soft_off   &out OUT_USB    &out OUT_BLE  &none    &bt BT_SEL 1  &none            &rgb_ug RGB_EFR  &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &rgb_ug RGB_EFF  &none
+&none       &bl BL_ON    &bl BL_DEC  &bl BL_INC      &bl BL_OFF    &none    &bt BT_SEL 4  &rgb_ug RGB_BRI  &rgb_ug RGB_HUD  &rgb_ug RGB_SAD  &rgb_ug RGB_SAI  &rgb_ug RGB_HUI  &none
+&to 0       &none        &none       &none           &none         &none    &bt BT_SEL 0  &bl BL_CYCLE     &rgb_ug RGB_TOG  &bl BL_TOG       &none            &none
             >;
 
             sensor-bindings = <&scroll_encoder>;
