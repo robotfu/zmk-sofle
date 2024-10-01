@@ -59,7 +59,7 @@
 &kp GRAVE   &kp Q       &kp W       &kp E        &kp R        &kp T         &kp PG_DN  &kp Y       &kp U            &kp I        &kp O       &kp P              &kp EQUAL
 &kp COLON   &mt LWIN A  &mt LALT S  &mt LCTRL D  &mt LSHFT F  &kp G         &kp HOME   &kp H       &mt RSHFT J      &mt RCTRL K  &mt RALT L  &mt RIGHT_WIN SQT  &kp MINUS
 &kp PIPE    &kp Z       &kp X       &kp C        &kp V        &kp B         &kp END    &kp N       &kp M            &kp COMMA    &kp DOT     &kp FSLH           &kp BACKSLASH
-&kp C_MUTE  &tog 2      &tog 1      &lt 2 TAB    &lt 1 SPACE  &lt 4 ESC     &tog 0     &lt 6 DEL   &lt 4 BACKSPACE  &lt 5 ENTER  &tog 4      &tog 5
+&kp C_MUTE  &tog 2      &tog 1      &lt 2 TAB    &lt 1 SPACE  &lt 3 ESC     &tog 0     &lt 5 DEL   &lt 3 BACKSPACE  &lt 4 ENTER  &tog 3      &tog 4
             >;
 
             sensor-bindings = <&inc_dec_kp RIGHT LEFT>;
@@ -89,19 +89,6 @@
             >;
 
             label = "media";
-        };
-
-        featL {
-            bindings = <
-&trans  &trans       &trans  &trans      &trans     &trans               &trans     &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &bootloader  &trans  &sys_reset  &soft_off  &rgb_ug RGB_TOG      &trans     &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans       &trans  &trans      &trans     &ext_power EP_TOG    &trans     &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans       &trans  &to 2       &to 1      &out OUT_TOG         &trans     &trans  &trans  &trans  &trans  &trans  &trans
-&to 0   &trans       &trans  &trans      &trans     &trans               &mkp LCLK  &trans  &trans  &trans  &trans  &trans
-            >;
-
-            sensor-bindings = <&scroll_encoder>;
-            label = "feat left";
         };
 
         num {
@@ -141,19 +128,6 @@
             label = "fun";
         };
 
-        featR {
-            label = "feat right";
-            bindings = <
-&none  &none  &none  &none  &none  &none    &none  &none              &none      &none       &none   &none        &none
-&none  &none  &none  &none  &none  &none    &none  &rgb_ug RGB_TOG    &soft_off  &sys_reset  &none   &bootloader  &none
-&none  &none  &none  &none  &none  &none    &none  &ext_power EP_TOG  &none      &none       &none   &none        &none
-&none  &none  &none  &none  &none  &none    &none  &out OUT_TOG       &to 9      &to 4       &to 5   &none        &none
-&to 0  &none  &none  &none  &none  &none    &none  &trans             &trans     &trans      &trans  &trans
-            >;
-
-            sensor-bindings = <&scroll_encoder>;
-        };
-
         game {
             bindings = <
 &trans     &trans  &trans  &trans     &trans     &trans     &kp UP     &trans  &trans     &trans     &trans   &trans    &trans
@@ -165,34 +139,20 @@
 
             label = "game";
         };
-    };
 
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
+        feat {
+            bindings = <
+&trans  &trans       &trans  &trans      &trans     &trans               &trans     &trans             &trans     &trans      &trans  &trans       &trans
+&trans  &bootloader  &trans  &sys_reset  &soft_off  &rgb_ug RGB_TOG      &trans     &rgb_ug RGB_TOG    &soft_off  &sys_reset  &trans  &bootloader  &trans
+&trans  &trans       &trans  &trans      &trans     &ext_power EP_TOG    &trans     &ext_power EP_TOG  &trans     &trans      &trans  &trans       &trans
+&trans  &trans       &trans  &to 2       &to 1      &out OUT_TOG         &trans     &out OUT_TOG       &to 3      &to 4       &to 5   &trans       &trans
+&to 0   &trans       &trans  &trans      &trans     &trans               &mkp LCLK  &trans             &trans     &trans      &trans  &trans
+            >;
 
-        nav_feat {
-            if-layers = <1>;
-            then-layer = <3>;
-        };
-
-        num_feat {
-            if-layers = <4>;
-            then-layer = <7>;
-        };
-
-        media_feat {
-            if-layers = <2>;
-            then-layer = <3>;
-        };
-
-        sym_feat {
-            if-layers = <5>;
-            then-layer = <7>;
-        };
-
-        fun_feat {
-            if-layers = <6>;
-            then-layer = <7>;
+            sensor-bindings = <&scroll_encoder>;
+            label = "feat left";
         };
     };
+
+    conditional_layers { compatible = "zmk,conditional-layers"; };
 };
