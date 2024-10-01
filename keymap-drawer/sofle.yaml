@@ -332,7 +332,7 @@ layers:
   - F3
   - F4
   - F5
-  - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
+  - RGB BRI
   - F6
   - F7
   - F8
@@ -346,11 +346,11 @@ layers:
   - $$mdi:mouse-right-click-outline$$
   - '&mkp MB4'
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
-  - PG UP
-  - END
-  - $$mdi:arrow-up-bold$$
-  - HOME
-  - {t: '-', s: _}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - RGB OFF
+  - RGB SPD
+  - RGB SPI
+  - RGB ON
   - {t: '=', s: +}
   - {t: '$$mdi:transfer$$', type: trans}
   - '~'
@@ -359,11 +359,11 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - '&mkp MB5'
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
-  - PG DN
-  - $$mdi:arrow-left-bold$$
-  - $$mdi:arrow-down-bold$$
-  - $$mdi:arrow-right-bold$$
-  - {t: '[', s: '{'}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - RGB EFR
+  - RGB BRD
+  - RGB BRI
+  - RGB EFF
   - {t: ']', s: '}'}
   - {t: '$$mdi:transfer$$', type: trans}
   - RGB OFF
@@ -373,10 +373,10 @@ layers:
   - RGB SPI
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
   - RGB BRI
-  - RGB BRD
-  - Ins
-  - F11
-  - F12
+  - RGB HUD
+  - RGB SAD
+  - RGB SAI
+  - RGB HUI
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: base, h: toggle}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -384,7 +384,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
-  - $$mdi:mouse-left-click-outline$$
+  - RGB TOG
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
