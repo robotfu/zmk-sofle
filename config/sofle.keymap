@@ -69,11 +69,11 @@
 
         feat_left {
             bindings = <
-&none  &none        &none  &none       &none      &none                &none  &none  &none  &none  &none  &none  &none
-&none  &bootloader  &none  &sys_reset  &soft_off  &rgb_ug RGB_TOG      &none  &none  &none  &none  &none  &none  &none
-&none  &none        &none  &none       &none      &ext_power EP_TOG    &none  &none  &none  &none  &none  &none  &none
-&none  &none        &none  &to 3       &to 2      &out OUT_TOG         &none  &none  &none  &none  &none  &none  &none
-&to 0  &none        &none  &none       &none      &none                &none  &none  &none  &none  &none  &none
+&none  &none        &none   &none       &none      &none                &none      &none  &none  &none  &none  &none  &none
+&none  &bootloader  &none   &sys_reset  &soft_off  &rgb_ug RGB_TOG      &none      &none  &none  &none  &none  &none  &none
+&none  &none        &none   &none       &none      &ext_power EP_TOG    &none      &none  &none  &none  &none  &none  &none
+&none  &none        &none   &to 3       &to 2      &out OUT_TOG         &none      &none  &none  &none  &none  &none  &none
+&to 0  &trans       &trans  &trans      &trans     &trans               &mkp LCLK  &none  &none  &none  &none  &none
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -108,11 +108,11 @@
         feat_right {
             label = "feat right";
             bindings = <
-&none  &none  &none  &none  &none  &none    &none  &none              &none      &none       &none  &none        &none
-&none  &none  &none  &none  &none  &none    &none  &rgb_ug RGB_TOG    &soft_off  &sys_reset  &none  &bootloader  &none
-&none  &none  &none  &none  &none  &none    &none  &ext_power EP_TOG  &none      &none       &none  &none        &none
-&none  &none  &none  &none  &none  &none    &none  &out OUT_TOG       &to 4      &to 5       &to 6  &none        &none
-&to 0  &none  &none  &none  &none  &none    &none  &none              &none      &none       &none  &none
+&none  &none  &none  &none  &none  &none    &none  &none              &none      &none       &none   &none        &none
+&none  &none  &none  &none  &none  &none    &none  &rgb_ug RGB_TOG    &soft_off  &sys_reset  &none   &bootloader  &none
+&none  &none  &none  &none  &none  &none    &none  &ext_power EP_TOG  &none      &none       &none   &none        &none
+&none  &none  &none  &none  &none  &none    &none  &out OUT_TOG       &to 4      &to 5       &to 6   &none        &none
+&to 0  &none  &none  &none  &none  &none    &none  &trans             &trans     &trans      &trans  &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
