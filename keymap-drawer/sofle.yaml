@@ -58,14 +58,14 @@ layers:
   - {t: nav, h: toggle}
   - {t: '$$mdi:keyboard-tab$$', h: media}
   - {t: '$$mdi:keyboard-space$$', h: nav}
-  - {t: '$$mdi:keyboard-esc$$', h: feat_left}
+  - {t: '$$mdi:keyboard-esc$$', h: featL}
   - {t: game, h: toggle}
   - {t: '$$mdi:backspace-reverse-outline$$', h: fun}
   - {t: '$$mdi:backspace$$', h: num}
   - {t: '$$mdi:keyboard-return$$', h: sym}
   - {t: num, h: toggle}
   - {t: sym, h: toggle}
-  feat_left:
+  featL:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -260,7 +260,7 @@ layers:
   - STOP
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  feat_right:
+  featR:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -308,7 +308,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:toggle-switch$$', h: '$$mdi:bluetooth$$', s: '$$mdi:usb$$'}
-  - {t: feat_right, h: toggle}
+  - {t: featR, h: toggle}
   - {t: num, h: toggle}
   - {t: sym, h: toggle}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
