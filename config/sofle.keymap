@@ -150,7 +150,7 @@
             >;
 
             sensor-bindings = <&scroll_encoder>;
-            label = "feat left";
+            label = "feat";
         };
     };
 
