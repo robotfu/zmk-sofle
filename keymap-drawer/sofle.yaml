@@ -58,8 +58,8 @@ layers:
   - {t: nav, h: toggle}
   - {t: '$$mdi:keyboard-tab$$', h: media}
   - {t: '$$mdi:keyboard-space$$', h: nav}
-  - {t: '$$mdi:keyboard-esc$$', h: num}
-  - {t: base, h: toggle}
+  - {t: '$$mdi:keyboard-esc$$', h: feat}
+  - {t: game, h: toggle}
   - {t: '$$mdi:backspace-reverse-outline$$', h: fun}
   - {t: '$$mdi:backspace$$', h: num}
   - {t: '$$mdi:keyboard-return$$', h: sym}
@@ -253,10 +253,10 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: ., s: '>'}
   - {t: '0', s: )}
-  - {t: '-', s: _, type: held}
+  - {t: '-', s: _}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held alternate}
+  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -513,7 +513,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
